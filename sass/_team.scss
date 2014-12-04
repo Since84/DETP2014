@@ -61,7 +61,16 @@
 					text-decoration: none;
 					font-size: .9rem;
 					line-height: 1em;
+
+					.facebook & {
+						&:before{
+							content: '';
+							display: inline-block;
+							background: $facebook;
+						}
+					}
 				}
+
 			}
 		}
 

@@ -28,6 +28,13 @@
 
 // Images 
 	$site-logo : url('images/full_color.png') no-repeat; 
+	$facebook : url('images/ikons/facebook.png') no-repeat; 
+	$twitter : url('images/ikons/twitter.png') no-repeat; 
+	$linkedin : url('images/ikons/linkedin.png') no-repeat; 
+	$play : url('images/ikons/play.png') no-repeat; 
+	$pause : url('images/ikons/pause.png') no-repeat; 
+	$next : url('images/ikons/skip_next.png') no-repeat; 
+	$previous : url('images/ikons/skip_previous.png') no-repeat; 
 
 // Typography 
 @mixin maintext {

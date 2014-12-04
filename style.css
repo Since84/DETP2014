@@ -148,7 +148,7 @@ body:not(.wp-admin) {
   text-align: center;
   z-index: 1000;
 }
-/* line 70, sass/_detp.scss */
+/* line 77, sass/_detp.scss */
 .site-navigation li {
   display: inline-block;
   vertical-align: middle;
@@ -156,7 +156,7 @@ body:not(.wp-admin) {
   max-width: 200px;
   text-align: center;
 }
-/* line 76, sass/_detp.scss */
+/* line 83, sass/_detp.scss */
 .site-navigation li a {
   text-decoration: none;
   font-family: 'myriad-pro', sans-serif;
@@ -164,21 +164,21 @@ body:not(.wp-admin) {
   font-size: 28px;
   color: #000000;
 }
-/* line 81, sass/_detp.scss */
+/* line 88, sass/_detp.scss */
 .site-navigation li .nav-drop {
   display: none;
   position: absolute;
   width: 100%;
 }
-/* line 86, sass/_detp.scss */
+/* line 93, sass/_detp.scss */
 .site-navigation li:hover .nav-drop {
   display: block;
 }
-/* line 88, sass/_detp.scss */
+/* line 95, sass/_detp.scss */
 .site-navigation li.home-link {
   max-width: 300px;
 }
-/* line 90, sass/_detp.scss */
+/* line 97, sass/_detp.scss */
 .site-navigation li.home-link a {
   font-size: 26px;
   font-weight: 600;
@@ -426,7 +426,13 @@ body:not(.wp-admin) {
   font-size: .9rem;
   line-height: 1em;
 }
-/* line 68, sass/_team.scss */
+/* line 66, sass/_team.scss */
+.facebook .our-team .member .member-contact li a:before {
+  content: '';
+  display: inline-block;
+  background: url("images/ikons/facebook.png") no-repeat;
+}
+/* line 77, sass/_team.scss */
 .our-team .member .member-bio {
   font-weight: lighter;
 }
