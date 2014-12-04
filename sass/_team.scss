@@ -1,17 +1,18 @@
 /* Team Block */
 .our-team {
 	border-bottom: 3px solid $black;
+	background: #eee;
 	padding-left: 15vw;
 	.member {
 		position: relative;
-		width: 38vw;
-		margin-right: 2vw;
+		width: 12.5vw; 
+		margin-right: 8vw;
 		display: inline-block;
 		vertical-align: top;
 		font-size: 1.2rem;
 		text-align: left;
 		overflow: hidden;
-		padding: 20px 5px;
+		padding: 5px;
 		border: 1px solid $black; 
 		border-width: 3px 0 0 0;
 		margin-bottom: 1em;
@@ -33,6 +34,10 @@
 			// border-radius: 150px;
 		}
 
+		.member-thumbnail {
+			margin-bottom: 1em;
+		}
+
 		.member-bio {
 			display: inline-block;
 			vertical-align: top;
@@ -52,22 +57,69 @@
 		.member-contact {
 			display: inline-block;
 			width: 16vw;
-			margin-left: 2vw;
 			vertical-align: top;
 			line-height: 1em;
 			li{
+				text-align: left;
 				a {
-					color: $violet;
+					display: inline-block;
+					width: 100%;
+					// background: $yellow;
+					color: black;
+					padding: 8px 10px;
+					margin: .3em 0;
 					text-decoration: none;
 					font-size: .9rem;
-					line-height: 1em;
+					text-align: left;
+					border-bottom: 1px dashed $black;
+					transition: background-color .5s, color .5s;
+					&:before {
+						content: '';
+						display: inline-block;
+						width: .8em;
+						height: .8em;
+						background-size: contain;
+						margin-right: 0.5em;
+					}
+					&:hover {
+						color: white;
+					}
 
-					.facebook & {
-						&:before{
-							content: '';
-							display: inline-block;
-							background: $facebook;
+				}
+				&.facebook a {
+					&:before{
+						background-image: url("images/ikons/facebook.png");
+						background-size: contain;
+					}
+					&:hover{
+						&:before {
+							background-image: url("images/ikons/facebook-white.png");
 						}
+						background-color: $facebook-color;
+					}
+				}
+				&.twitter a {
+					&:before{
+						background-image: url("images/ikons/twitter.png");
+						background-size: contain;
+					}
+					&:hover{
+						&:before {
+							background-image: url("images/ikons/twitter-white.png");
+						}
+						background-color: $twitter-color;
+					}
+				}
+				&.linkedin a {
+					&:before{
+						background-image: url("images/ikons/linkedin.png");
+						background-size: contain;
+					}
+					&:hover{
+						&:before {
+							background-image: url("images/ikons/linkedin-white.png");
+						}
+						background-color: $linkedin-color;
 					}
 				}
 

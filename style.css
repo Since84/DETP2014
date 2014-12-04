@@ -108,10 +108,10 @@ body:not(.wp-admin) {
   color: #000000;
   font-size: 30px;
   max-width: 1140px;
-  width: 100vw;
+  width: 85vw;
   margin: 0 auto 2vw;
   display: block;
-  padding: 1vw 4vw;
+  padding: 1vw 0;
   padding-bottom: 1vw;
   border-bottom: 1px dashed #000000;
 }
@@ -130,7 +130,7 @@ body:not(.wp-admin) {
   position: absolute;
   width: 12vw;
   height: 20vw;
-  background: url("images/full_color.png") no-repeat;
+  background: url("images/full_color.png");
   background-size: contain;
   left: 2vw;
   top: 0.5vw;
@@ -148,7 +148,7 @@ body:not(.wp-admin) {
   text-align: center;
   z-index: 1000;
 }
-/* line 77, sass/_detp.scss */
+/* line 85, sass/_detp.scss */
 .site-navigation li {
   display: inline-block;
   vertical-align: middle;
@@ -156,7 +156,7 @@ body:not(.wp-admin) {
   max-width: 200px;
   text-align: center;
 }
-/* line 83, sass/_detp.scss */
+/* line 91, sass/_detp.scss */
 .site-navigation li a {
   text-decoration: none;
   font-family: 'myriad-pro', sans-serif;
@@ -164,21 +164,21 @@ body:not(.wp-admin) {
   font-size: 28px;
   color: #000000;
 }
-/* line 88, sass/_detp.scss */
+/* line 96, sass/_detp.scss */
 .site-navigation li .nav-drop {
   display: none;
   position: absolute;
   width: 100%;
 }
-/* line 93, sass/_detp.scss */
+/* line 101, sass/_detp.scss */
 .site-navigation li:hover .nav-drop {
   display: block;
 }
-/* line 95, sass/_detp.scss */
+/* line 103, sass/_detp.scss */
 .site-navigation li.home-link {
   max-width: 300px;
 }
-/* line 97, sass/_detp.scss */
+/* line 105, sass/_detp.scss */
 .site-navigation li.home-link a {
   font-size: 26px;
   font-weight: 600;
@@ -347,8 +347,8 @@ body:not(.wp-admin) {
   position: absolute;
   display: block;
   width: 40vw;
-  text-align: left;
-  background: #000000;
+  text-align: center;
+  background: #F7CA10;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
   margin-top: -3em;
@@ -361,33 +361,50 @@ body:not(.wp-admin) {
 .detp-gallery .controls li {
   display: inline-block;
   position: relative;
-  width: 40px;
+  width: 50px;
+  height: 40px;
   color: #F7CA10;
   padding: .5em 1em;
+}
+/* line 59, sass/_gallery.scss */
+.detp-gallery .controls li.prev {
+  background-image: url("images/ikons/skip_previous.png");
+  background-size: contain;
+}
+/* line 63, sass/_gallery.scss */
+.detp-gallery .controls li.next {
+  background-image: url("images/ikons/skip_next.png");
+  background-size: contain;
+}
+/* line 67, sass/_gallery.scss */
+.detp-gallery .controls li.play_pause {
+  background-image: url("images/ikons/play.png");
+  background-size: contain;
 }
 
 /* Team Block */
 /* line 2, sass/_team.scss */
 .our-team {
   border-bottom: 3px solid #000000;
+  background: #eee;
   padding-left: 15vw;
 }
-/* line 5, sass/_team.scss */
+/* line 6, sass/_team.scss */
 .our-team .member {
   position: relative;
-  width: 38vw;
-  margin-right: 2vw;
+  width: 12.5vw;
+  margin-right: 8vw;
   display: inline-block;
   vertical-align: top;
   font-size: 1.2rem;
   text-align: left;
   overflow: hidden;
-  padding: 20px 5px;
+  padding: 5px;
   border: 1px solid #000000;
   border-width: 3px 0 0 0;
   margin-bottom: 1em;
 }
-/* line 24, sass/_team.scss */
+/* line 25, sass/_team.scss */
 .our-team .member .member-info {
   display: inline-block;
   padding: 0 1vw 0 0;
@@ -395,49 +412,108 @@ body:not(.wp-admin) {
   height: auto;
   background-size: cover;
 }
-/* line 36, sass/_team.scss */
+/* line 37, sass/_team.scss */
+.our-team .member .member-thumbnail {
+  margin-bottom: 1em;
+}
+/* line 41, sass/_team.scss */
 .our-team .member .member-bio {
   display: inline-block;
   vertical-align: top;
   display: none;
 }
-/* line 42, sass/_team.scss */
+/* line 47, sass/_team.scss */
 .our-team .member h3.member-name {
   margin-bottom: .3rem;
   font-family: "myriad-std-tilt";
   font-size: 1.5em;
 }
-/* line 48, sass/_team.scss */
+/* line 53, sass/_team.scss */
 .our-team .member h4.member-title, .our-team .member h4.member-phone {
   font-size: .8em;
 }
-/* line 52, sass/_team.scss */
+/* line 57, sass/_team.scss */
 .our-team .member .member-contact {
   display: inline-block;
   width: 16vw;
-  margin-left: 2vw;
   vertical-align: top;
   line-height: 1em;
 }
-/* line 59, sass/_team.scss */
+/* line 62, sass/_team.scss */
+.our-team .member .member-contact li {
+  text-align: left;
+}
+/* line 64, sass/_team.scss */
 .our-team .member .member-contact li a {
-  color: #722A67;
+  display: inline-block;
+  width: 100%;
+  color: black;
+  padding: 8px 10px;
+  margin: .3em 0;
   text-decoration: none;
   font-size: .9rem;
-  line-height: 1em;
+  text-align: left;
+  border-bottom: 1px dashed #000000;
+  transition: background-color .5s, color .5s;
 }
-/* line 66, sass/_team.scss */
-.facebook .our-team .member .member-contact li a:before {
+/* line 76, sass/_team.scss */
+.our-team .member .member-contact li a:before {
   content: '';
   display: inline-block;
-  background: url("images/ikons/facebook.png") no-repeat;
+  width: .8em;
+  height: .8em;
+  background-size: contain;
+  margin-right: 0.5em;
 }
-/* line 77, sass/_team.scss */
+/* line 84, sass/_team.scss */
+.our-team .member .member-contact li a:hover {
+  color: white;
+}
+/* line 90, sass/_team.scss */
+.our-team .member .member-contact li.facebook a:before {
+  background-image: url("images/ikons/facebook.png");
+  background-size: contain;
+}
+/* line 94, sass/_team.scss */
+.our-team .member .member-contact li.facebook a:hover {
+  background-color: #3b5998;
+}
+/* line 95, sass/_team.scss */
+.our-team .member .member-contact li.facebook a:hover:before {
+  background-image: url("images/ikons/facebook-white.png");
+}
+/* line 102, sass/_team.scss */
+.our-team .member .member-contact li.twitter a:before {
+  background-image: url("images/ikons/twitter.png");
+  background-size: contain;
+}
+/* line 106, sass/_team.scss */
+.our-team .member .member-contact li.twitter a:hover {
+  background-color: #00aced;
+}
+/* line 107, sass/_team.scss */
+.our-team .member .member-contact li.twitter a:hover:before {
+  background-image: url("images/ikons/twitter-white.png");
+}
+/* line 114, sass/_team.scss */
+.our-team .member .member-contact li.linkedin a:before {
+  background-image: url("images/ikons/linkedin.png");
+  background-size: contain;
+}
+/* line 118, sass/_team.scss */
+.our-team .member .member-contact li.linkedin a:hover {
+  background-color: #007bb6;
+}
+/* line 119, sass/_team.scss */
+.our-team .member .member-contact li.linkedin a:hover:before {
+  background-image: url("images/ikons/linkedin-white.png");
+}
+/* line 129, sass/_team.scss */
 .our-team .member .member-bio {
   font-weight: lighter;
 }
 @media screen and (max-width: 700px) {
-  /* line 5, sass/_team.scss */
+  /* line 6, sass/_team.scss */
   .our-team .member {
     width: 100%;
   }
@@ -506,7 +582,7 @@ ul.projects > li.project-list .project-list-item .project-description {
 footer {
   margin-top: 4vh;
   background: #000000;
-  height: 50vh;
+  height: 5vh;
   width: 100vw;
 }
 /* line 9, sass/_footer.scss */

@@ -30,10 +30,10 @@ body {
 	@include header2;
 	font-size: 30px;
 	max-width: 1140px;
-	width: 100vw;
+	width: 85vw;
 	margin: 0 auto 2vw;
 	display: block;
-	padding: 1vw 4vw;
+	padding: 1vw 0;
 	padding-bottom: 1vw;
 	border-bottom: 1px dashed $black;
 }
